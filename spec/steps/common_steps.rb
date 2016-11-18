@@ -40,7 +40,7 @@ module CommonSteps
           deviceName:   :android,
           platformName: :android,
           app:          '../app/build/outputs/apk/app-debug.apk',
-          appWaitActivity:  'hm.orz.chaos114.android.tumekyouen.modules.title.TitleActivity'
+          appWaitActivity:  'hm.orz.chaos114.android.tumekyouen.modules.initial.InitialActivity,hm.orz.chaos114.android.tumekyouen.modules.title.TitleActivity'
         },
         appium_lib: {
           wait: 10
