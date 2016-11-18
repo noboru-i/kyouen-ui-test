@@ -39,7 +39,8 @@ module CommonSteps
         caps: {
           deviceName:   :android,
           platformName: :android,
-          app:          'app/build/outputs/apk/app-debug.apk'
+          app:          '../kyouen-android/app/build/outputs/apk/app-debug.apk',
+          appWaitActivity:  'hm.orz.chaos114.android.tumekyouen.modules.title.TitleActivity'
         },
         appium_lib: {
           wait: 10

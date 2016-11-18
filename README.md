@@ -18,7 +18,8 @@ TODO
 ## Usage
 
 ```
-TODO
+OS=iOS bundle exec rspec spec     # for iOS testing
+OS=android bundle exec rspec spec # for android testing
 ```
 
 ## Contribute
