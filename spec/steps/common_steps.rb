@@ -51,7 +51,7 @@ module CommonSteps
         caps: {
           deviceName:   'iPhone Simulator',
           platformName: 'iOS',
-          app:          'build/Build/Products/AdHoc-iphonesimulator/TumeKyouen.app',
+          app:          '../build/Build/Products/AdHoc-iphonesimulator/TumeKyouen.app',
           autoAcceptAlerts: true
         },
         appium_lib: {
