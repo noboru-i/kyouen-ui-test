@@ -26,6 +26,10 @@ module CommonSteps
     @ss_count += 1
   end
 
+  step 'アラートでOKを押す' do
+    driver.switch_to.alert.accept
+  end
+
   def search_element(screen_id, element_id)
     id = format('%s_%02d', screen_id, element_id)
     driver.find_element :id, id
@@ -49,10 +53,12 @@ module CommonSteps
     when 'iOS'
       desired_caps = {
         caps: {
-          deviceName:   'iPhone Simulator',
+          deviceName:   'iPhone 6s',
           platformName: 'iOS',
+          platformVersion: '10.1',
           app:          '../build/Build/Products/AdHoc-iphonesimulator/TumeKyouen.app',
-          autoAcceptAlerts: true
+          autoAcceptAlerts: true,
+          automationName: 'XCUITest'
         },
         appium_lib: {
           wait: 10
