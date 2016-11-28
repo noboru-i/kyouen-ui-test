@@ -55,7 +55,7 @@ module CommonSteps
         caps: {
           deviceName:   'iPhone 6s',
           platformName: 'iOS',
-          platformVersion: '10.1',
+          platformVersion: '10.0',
           app:          '../build/Build/Products/AdHoc-iphonesimulator/TumeKyouen.app',
           autoAcceptAlerts: true,
           automationName: 'XCUITest'
