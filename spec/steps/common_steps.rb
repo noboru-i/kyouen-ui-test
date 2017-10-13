@@ -53,9 +53,9 @@ module CommonSteps
     when 'iOS'
       desired_caps = {
         caps: {
-          deviceName:   'iPhone 6s',
+          deviceName:   'iPhone 8',
           platformName: 'iOS',
-          platformVersion: '10.0',
+          platformVersion: '11.0',
           app:          '../build/Build/Products/AdHoc-iphonesimulator/TumeKyouen.app',
           autoAcceptAlerts: true,
           automationName: 'XCUITest'
